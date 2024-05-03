@@ -26,8 +26,8 @@ jobs:
         run: npm start & npx wait-on http://127.0.0.1:${{env.PORT}}
       - name: Output information
         run: |
-          echo "MONGODB_USERNAME" $MONGODB_USERNAME
-          echo "MONGODB_DB_NAME" $MONGODB_DB_NAME
+          echo "MONGODB_USERNAME" ${{env.MONGODB_USERNAME}}
+          echo "MONGODB_DB_NAME" ${{env.MONGODB_DB_NAME}}
       - name: Run tests
         run: npm test
       - name: Output information
