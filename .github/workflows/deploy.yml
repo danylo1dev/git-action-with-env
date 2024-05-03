@@ -7,10 +7,10 @@ on:
 jobs:
   test:
     env:
-      MONGODB_CLUSTER_ADDRESS: ${{secret.MONGODB_CLUSTER_ADDRESS}}
-      MONGODB_USERNAME: ${{secret.MONGODB_USERNAME}}
-      MONGODB_PASSWORD: ${{secret.MONGODB_PASSWORD}}
-      PORT: ${{secret.PORT}}
+      # MONGODB_CLUSTER_ADDRESS: ${{secret.MONGODB_CLUSTER_ADDRESS}}
+      # MONGODB_USERNAME: ${{secret.MONGODB_USERNAME}}
+      # MONGODB_PASSWORD: ${{secret.MONGODB_PASSWORD}}
+      # PORT: ${{secret.PORT}}
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
