@@ -10,7 +10,7 @@ jobs:
       MONGODB_CLUSTER_ADDRESS: ${{vars.MONGODB_CLUSTER_ADDRESS}}
       MONGODB_USERNAME: ${{vars.MONGODB_USERNAME}}
       MONGODB_PASSWORD: ${{vars.MONGODB_PASSWORD}}
-      PORT: ${{vars.PORT}}
+      PORT: 8080
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
